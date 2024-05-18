@@ -10,5 +10,6 @@ mkdir -p ${EXP_DIR}
 python -u main.py \
     --output_dir ${EXP_DIR} \
     --backbone "coat_lite_small" \
-    --backbone_weights "../../output/pretrained/coat_lite_small_8d362f48.pth" \
+    #--backbone_weights "../../output/pretrained/coat_lite_small_8d362f48.pth" \
+    --backbone_weights "./exps/pretrained/coat_lite_small_deformable_detr_1801ee09.pth" \
     ${PY_ARGS} | tee -a ${EXP_DIR}/history.txt
